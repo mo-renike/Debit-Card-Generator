@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <h4>Card details</h4>
+        <input type="text" name="name" placeholder="Full Name" id="name" />
+
+        <div class="cardtype">
+          <select required name="select" id="select">
+              <option value="master">MasterCard</option>
+              <option value="visa">VisaCard</option>
+          </select>
+          
+        </div>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+      <div class="card-container">
+        <div class="card" id="visaCard">
+          <div class="logos">
+            <img src="img/visa.png" />
+            <img src="img/chip.png" class="chip" />
+          </div>
+
+          <div class="details">
+            <div id="cardNumber">
+              <p id="card-number"></p>
+              <i class="fa fa-caret-right"></i>
+            </div>
+            <p id="date">10/24</p>
+            <p class="cardName"></p>
+          </div>
+        </div>
+        <div class="card" id="masterCard">
+          <div class="logos">
+            <img src="img/master.png" />
+            <img src="img/chip.png" class="chip" />
+          </div>
+
+          <div class="details">
+            <div id="cardNumber">
+              <p id="card-number">5399 9922 0982 8723</p>
+              <i class="fa fa-caret-right"></i>
+            </div>
+            <p id="date">10/24</p>
+            <p class="cardName">Morenike Oyewole</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="generate">Download Card</button>
+    <script src="script.js"></script>
+  </body>
+</html>

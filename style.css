@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,600&display=swap");
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  background: linear-gradient(30deg, #430000, #000024);
+  /* height: 100vh; */
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-direction: column;
+}
+
+button {
+  margin: 1rem auto;
+  width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+button {
+  color: inherit;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+button:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+form {
+  width: 400px;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: auto;
+}
+form input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.6rem auto;
+  color: #ffffff;
+}
+.cardtype {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.cardtype select{
+    color: #ffffff;
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.cardtype select > option{
+    color: #ffffff;
+    font-weight: bolder;
+  background-color: #000024;
+}
+form button {
+  width: 50%;
+  border-radius: 10px;
+  margin: 1px;
+}
+.submit {
+  width: 100%;
+  margin: 0.6rem auto;
+  background-color: #430000;
+}
+
+.card {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  margin: 1rem auto;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  /* display: none; */
+}
+
+.card:hover {
+  transform: scale(1.07);
+}
+.card i {
+  font-size: 3rem;
+}
+.card img {
+  width: 70px;
+}
+.details {
+  font-family: "Playfair Display", serif;
+  margin: 2.4rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.details p {
+  margin: 0.2rem 0;
+}
+#cardNumber {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.chip {
+  transform: rotate(90deg);
+}
+.fa-caret-right {
+  margin-right: 1rem;
+}
