@@ -4,15 +4,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-weight: bold;
 }
 body {
   font-size: 18px;
-  background: linear-gradient(30deg, #430000, #000024);
+  background: linear-gradient(30deg, #17001a, #1a0000);
   height: 100vh;
   min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: #ffffff;
   justify-content: center;
 }
 .container {
@@ -25,11 +27,14 @@ body {
   flex-direction: column;
 }
 
-button {
+.download-button {
   margin: 1rem auto;
   width: 400px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 button {
   color: inherit;
@@ -83,6 +88,8 @@ form button {
   width: 100%;
   margin: 0.6rem auto;
   background-color: #430000;
+  outline: none;
+  border: none;
 }
 
 .card {

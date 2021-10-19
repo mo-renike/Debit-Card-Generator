@@ -8,6 +8,7 @@ const numberMaster = document.querySelector("#master-number");
 const numberVisa = document.querySelector("#visa-number");
 const cardName = document.querySelectorAll(".cardName");
 const container = document.querySelector(".card-container");
+const download = document.querySelector(".download-button");
 
 let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const date = new Date();
@@ -31,6 +32,7 @@ form.addEventListener("submit", (e) => {
     for (const exp of dates) {
       exp.innerHTML = `${newMonth}/${newYear}`;
     }
+    download.style.display = 'flex'
     if (select.value == "master") {
       masterCard.style.display = "flex";
       visaCard.style.display = "none";
