@@ -109,7 +109,7 @@ form button {
 }
 #masterCard,
 #visaCard {
-  /* display: none; */
+  display: none;
 }
 .card:hover {
   transform: scale(1.07);
