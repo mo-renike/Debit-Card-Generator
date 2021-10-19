@@ -8,8 +8,8 @@
 body {
   font-size: 18px;
   background: linear-gradient(30deg, #430000, #000024);
-  /* height: 100vh; */
-  /* min-height: 100vh; */
+  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
