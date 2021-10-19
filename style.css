@@ -7,7 +7,7 @@
   font-weight: bold;
 }
 body {
-  font-size: 18px;
+  font-size: 16px;
   background: linear-gradient(30deg, #17001a, #1a0000);
   height: 100vh;
   min-height: 100vh;
@@ -109,7 +109,7 @@ form button {
 }
 #masterCard,
 #visaCard {
-  display: none;
+  /* display: none; */
 }
 .card:hover {
   transform: scale(1.07);
@@ -118,18 +118,24 @@ form button {
   font-size: 3rem;
 }
 .card img {
-  width: 70px;
+  width: 60px;
 }
 .details {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   margin: 2.4rem 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .details p {
   margin: 0.2rem 0;
+  color: transparent;
+  background-color: silver;
+  text-shadow: rgba(17, 0, 0, 0.5) 1px 2px 1px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 #cardNumber {
   width: 100%;
