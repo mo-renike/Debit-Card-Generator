@@ -15,7 +15,7 @@
     <div class="container">
       <form id="form">
         <h4>Card details</h4>
-        <input type="text" name="name" placeholder="Full Name" id="name" />
+        <input type="text" name="name" placeholder="Full Name" id="name" required />
 
         <div class="cardtype">
           <select required name="select" id="select">
@@ -35,14 +35,14 @@
 
           <div class="details">
             <div id="cardNumber">
-              <p id="card-number"></p>
+              <p id="visa-number"></p>
               <i class="fa fa-caret-right"></i>
             </div>
             <p id="date">10/24</p>
             <p class="cardName"></p>
           </div>
         </div>
-        <!-- <div class="card" id="masterCard">
+        <div class="card" id="masterCard">
           <div class="logos">
             <img src="img/master.png" />
             <img src="img/chip.png" class="chip" />
@@ -50,13 +50,13 @@
 
           <div class="details">
             <div id="cardNumber">
-              <p id="card-number">5399 9922 0982 8723</p>
+              <p id="master-number"></p>
               <i class="fa fa-caret-right"></i>
             </div>
             <p id="date">10/24</p>
-            <p class="cardName">Morenike Oyewole</p>
+            <p class="cardName"></p>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
     <button id="generate">Download Card</button>

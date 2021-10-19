@@ -60,17 +60,17 @@ form input {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
-.cardtype select{
-    color: #ffffff;
-    width: 100%;
-    padding: 1rem;
-    outline: none;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.1);
+.cardtype select {
+  color: #ffffff;
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
 }
-.cardtype select > option{
-    color: #ffffff;
-    font-weight: bolder;
+.cardtype select > option {
+  color: #ffffff;
+  font-weight: bolder;
   background-color: #000024;
   cursor: pointer;
 }
@@ -97,9 +97,13 @@ form button {
   backdrop-filter: blur(10px);
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
-  /* display: none; */
+  display: flex;
+  flex-direction: column;
 }
-
+#masterCard,
+#visaCard {
+  display: none;
+}
 .card:hover {
   transform: scale(1.07);
 }
