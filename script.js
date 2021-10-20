@@ -17,22 +17,21 @@ const newMonth = ` ${month < 10 ? `0${month}` : month}`;
 const year = date.getFullYear() + 3;
 const newYear = year.toString().substr(2);
 
-let mo = "1234567890987655";
-let joy = mo.match(/.{1,4}/g);
-console.log(joy.join(" "));
+
+
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let name = userName.value;
 
-  if (name && name !== " ") {
+  if (name && name !== " " ) {
     for (const names of cardName) {
       names.innerHTML = name;
     }
     for (const exp of dates) {
       exp.innerHTML = `${newMonth}/${newYear}`;
     }
-    download.style.display = 'flex'
+    download.style.display = "flex";
     if (select.value == "master") {
       masterCard.style.display = "flex";
       visaCard.style.display = "none";

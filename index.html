@@ -15,18 +15,24 @@
     <div class="container">
       <form id="form">
         <h4>Card details</h4>
-        <input type="text" name="name" placeholder="Full Name" id="name" required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          id="name"
+          required
+          pattern="[A-Z a-z]+$"
+          title="Only Letters Allowed"
+        />
 
         <div class="cardtype">
           <select required name="select" id="select">
-              <option value="master">MasterCard</option>
-              <option value="visa">VisaCard</option>
+            <option value="master">MasterCard</option>
+            <option value="visa">VisaCard</option>
           </select>
-          
         </div>
         <button class="submit" type="submit">Submit</button>
       </form>
-      <div class="card-container">
         <div class="card" id="visaCard">
           <div class="logos">
             <img src="img/visa.png" />
@@ -57,9 +63,9 @@
             <p class="cardName"></p>
           </div>
         </div>
-      </div>
+      <button class="download-button">Download Card</button>
     </div>
-    <button class="download-button">Download Card</button>
+
     <script src="script.js"></script>
   </body>
 </html>
