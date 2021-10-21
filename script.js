@@ -19,7 +19,6 @@ const newYear = year.toString().substr(2);
 
 
 
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let name = userName.value;
@@ -36,7 +35,7 @@ form.addEventListener("submit", (e) => {
       masterCard.style.display = "flex";
       visaCard.style.display = "none";
       numberMaster.innerHTML = `5399 `;
-      for (let i = 0; i < 12; i++) {
+      for (let i = 0; i < 12; i++) {;
         numberMaster.innerHTML += num[getRandomNum()];
       }
     } else {

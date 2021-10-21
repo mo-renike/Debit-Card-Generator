@@ -105,7 +105,7 @@ form input {
   margin: 1rem auto;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   backdrop-filter: blur(10px);
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
@@ -127,7 +127,7 @@ form input {
 }
 .details {
   /* font-family: "Playfair Display", serif; */
-  margin: 2.4rem 0 0 0;
+  margin-top: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -135,7 +135,7 @@ form input {
   letter-spacing: 2px;
 }
 .details p {
-  margin: 0.2rem 0;
+  margin-top: 0.5rem;
   color: transparent;
   background-color: silver;
   text-shadow: rgba(17, 0, 0, 0.5) 1px 2px 1px;
@@ -190,7 +190,7 @@ form input {
     width: 50px;
   }
   .card{
-      height: 200px;
+      height: 230px;
   }
   .card i {
   font-size: 2rem;
